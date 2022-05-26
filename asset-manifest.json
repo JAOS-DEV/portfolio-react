@@ -1,6 +1,7 @@
 {
   "files": {
-    "main.js": "/portfolio-react/static/js/main.1cbcb97b.js",
+    "main.css": "/portfolio-react/static/css/main.c7ec3132.css",
+    "main.js": "/portfolio-react/static/js/main.29bb7dd4.js",
     "static/media/jackpot-laptop.png": "/portfolio-react/static/media/jackpot-laptop.eb13a627fd0792a7ab20.png",
     "static/media/paypal-laptop.png": "/portfolio-react/static/media/paypal-laptop.5b6f2fa08a70c09c46c5.png",
     "static/media/apple-site-laptop.png": "/portfolio-react/static/media/apple-site-laptop.a2e437e156cc543bef4d.png",
@@ -18,9 +19,11 @@
     "index.html": "/portfolio-react/index.html",
     "static/media/wave.svg": "/portfolio-react/static/media/wave.da34c9eee9ca242a6a6805778319033b.svg",
     "static/media/wave2.svg": "/portfolio-react/static/media/wave2.b578c862746d9ad2b0cd328d7e2e5182.svg",
-    "main.1cbcb97b.js.map": "/portfolio-react/static/js/main.1cbcb97b.js.map"
+    "main.c7ec3132.css.map": "/portfolio-react/static/css/main.c7ec3132.css.map",
+    "main.29bb7dd4.js.map": "/portfolio-react/static/js/main.29bb7dd4.js.map"
   },
   "entrypoints": [
-    "static/js/main.1cbcb97b.js"
+    "static/css/main.c7ec3132.css",
+    "static/js/main.29bb7dd4.js"
   ]
 }
