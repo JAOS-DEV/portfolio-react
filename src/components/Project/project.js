@@ -64,6 +64,8 @@ export const Title = styled.h1`
 `;
 
 export const Text = styled.p`
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
   white-space: pre-wrap;
   grid-column: 1/5;
   grid-row: 2/3;
@@ -88,6 +90,7 @@ export const TechTabContainer = styled.div`
 `;
 
 export const TechTab = styled.div`
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +121,7 @@ export const TechTabImage = styled.img`
 `;
 
 export const TechTabText = styled.p`
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   @media only screen and (max-width: 992px) {
     font-size: 16px;
@@ -134,12 +137,13 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Button = styled.a`
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
   background: linear-gradient(to bottom, #7a19f1, #332179);
   border-radius: 8px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   padding: 5px 20px;
   margin-right: 35px;

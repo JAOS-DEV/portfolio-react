@@ -37,11 +37,11 @@ export const SocialsContainer = styled.div`
 `;
 
 export const SocialIcon = styled.a`
-  margin: 20px;
   max-width: 100px;
 `;
 
 export const SocialIconImg = styled.img`
+  width: 100%;
   :hover {
     opacity: 0.5;
   }

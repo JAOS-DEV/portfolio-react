@@ -4,6 +4,7 @@ import ContactsContainer from "./containers/ContactContainer";
 import { BackToTopButton } from "./components/Button/BackToTopButton";
 import { useEffect } from "react";
 import MainWrapper from "./wrappers";
+import "../src/style.css";
 
 let BackToTopBtnEl: HTMLElement | null;
 
@@ -40,7 +41,6 @@ function App() {
       </BackToTopButton>
       <Hero />
       <ProjectsContainer />
-      {/* Contact */}
       <ContactsContainer />
     </MainWrapper>
   );

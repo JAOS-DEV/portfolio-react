@@ -68,7 +68,8 @@ export const Container = styled.div`
   }
 
   @media only screen and (max-width: 576px) {
-    align-items: flex-start;
+    padding: 0px;
+    align-items: center;
   }
 `;
 
@@ -85,7 +86,34 @@ export const Inner = styled.div`
   }
 `;
 
-export const ArrowImage = styled.img``;
+export const ArrowImage = styled.img`
+  width: 80px;
+
+  @media only screen and (max-height: 650px) {
+    width: 40px;
+  }
+
+  @media only screen and (max-height: 550px) {
+    width: 30px;
+  }
+
+  @media only screen and (max-height: 520px) {
+    width: 30px;
+    bottom: 0px;
+  }
+
+  @media only screen and (max-height: 400px) {
+    width: 40px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 70px;
+  }
+
+  @media only screen and (max-width: 576px) {
+    width: 60px;
+  }
+`;
 
 export const ArrowButton = styled.a`
   position: absolute;
@@ -93,39 +121,33 @@ export const ArrowButton = styled.a`
   width: 80px;
   z-index: 12;
   animation: pulse 1.4s infinite;
+  cursor: pointer;
 
-  @media only screen and (max-height: 600px) {
+  @media only screen and (max-height: 650px) {
     bottom: 10px;
-    width: 60px;
+    width: 40px;
   }
 
-  @media only screen and (max-height: 500px) {
-    width: 40px;
-    bottom: -40px;
+  @media only screen and (max-height: 550px) {
+    width: 30px;
+    bottom: -8px;
   }
 
-  @media only screen and (max-height: 440px) {
-    width: 40px;
-    bottom: -80px;
+  @media only screen and (max-height: 520px) {
+    width: 30px;
+    bottom: -25px;
   }
   @media only screen and (max-height: 400px) {
     width: 40px;
-    bottom: -200px;
+    bottom: -160px;
   }
 
-  :hover {
-    width: 85px;
-  }
   @media only screen and (max-width: 768px) {
-    :hover {
-      width: 65px;
-    }
+    width: 70px;
   }
+
   @media only screen and (max-width: 576px) {
     width: 40px;
-    :hover {
-      width: 50px;
-    }
   }
 `;
 
