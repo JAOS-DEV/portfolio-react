@@ -11,9 +11,5 @@ export const site = {
   url: "https://jaos-dev.github.io/portfolio-react",
   basePath: "/portfolio-react",
   github: "https://github.com/JAOS-DEV",
-  linkedin: "https://www.linkedin.com/in/james-o-sullivan-891779210/",
-  /**
-   * TODO: set a public contact address. Do not commit a personal Gmail.
-   */
-  contactEmail: null as string | null,
+  linkedin: "https://www.linkedin.com/in/jaosullivan0/",
 } as const;

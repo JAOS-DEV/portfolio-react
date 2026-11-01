@@ -21,9 +21,9 @@ export function Projects(): ReactElement {
           Production apps and tools, from marketplaces and transit tracking to pay and venue software.
         </p>
       </div>
-      <div className="mt-10 grid gap-8 lg:grid-cols-2">
+      <div className="mt-10 grid auto-rows-fr gap-8 lg:grid-cols-2">
         {projects.map((project, index) => (
-          <div key={project.slug} className={`fade-up ${fadeDelayClass[index] ?? ""}`}>
+          <div key={project.slug} className={`fade-up flex h-full ${fadeDelayClass[index] ?? ""}`}>
             <ProjectCard project={project} />
           </div>
         ))}

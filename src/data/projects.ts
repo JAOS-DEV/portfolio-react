@@ -7,9 +7,8 @@ export interface Project {
   imageAlt: string;
   liveUrl?: string;
   codeUrl?: string;
+  appStoreUrl?: string;
   inProgress?: boolean;
-  /** Shown on the card until the missing links are filled in. */
-  pending?: readonly string[];
 }
 
 export const projects: readonly Project[] = [
@@ -57,13 +56,12 @@ export const projects: readonly Project[] = [
     slug: "shiftpal",
     title: "ShiftPal",
     description:
-      "A shift, pay and legal-hours tracker for UK drivers, with an AI assistant that knows union rules. Available on the App Store.",
-    tech: ["React", "Firebase", "Gemini"],
+      "A shift tracker and pay calculator for hourly and shift work, with live timers, breaks, overtime, night and weekend premiums, and estimated tax and National Insurance.",
+    tech: ["React", "Firebase"],
     imageAlt: "Placeholder graphic for the ShiftPal screenshot",
     liveUrl: "https://shiftpal.app",
-    // TODO: add the App Store link.
-    // TODO: add the source code link.
-    pending: ["App Store link", "source code link"],
+    appStoreUrl: "https://apps.apple.com/gb/app/shiftpal-shift-tracker/id6757287002",
+    codeUrl: "https://github.com/JAOS-DEV/shiftpal-app",
   },
   {
     slug: "venuboard",

@@ -13,7 +13,7 @@ const actionClass =
 
 export function ProjectCard({ project }: ProjectCardProps): ReactElement {
   return (
-    <article className="flex flex-col overflow-hidden rounded-2xl border border-line bg-card shadow-[0_0_5px_1px_rgba(0,0,0,0.18)]">
+    <article className="flex h-full w-full flex-col overflow-hidden rounded-2xl border border-line bg-card shadow-[0_0_5px_1px_rgba(0,0,0,0.18)]">
       <div className="relative aspect-video bg-violet-deep">
         <Image
           src={withBasePath(`/projects/${project.slug}.webp`)}
@@ -41,14 +41,7 @@ export function ProjectCard({ project }: ProjectCardProps): ReactElement {
             </li>
           ))}
         </ul>
-        {project.pending?.length ? (
-          <ul className="text-sm text-muted">
-            {project.pending.map((item) => (
-              <li key={item}>TODO: {item}</li>
-            ))}
-          </ul>
-        ) : null}
-        <div className="mt-auto flex flex-col gap-3 pt-2 sm:flex-row">
+        <div className="mt-auto flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
           {project.liveUrl ? (
             <a
               href={project.liveUrl}
@@ -58,6 +51,18 @@ export function ProjectCard({ project }: ProjectCardProps): ReactElement {
               className={actionClass}
             >
               Live
+              <ArrowUpRight className="size-4" aria-hidden="true" />
+            </a>
+          ) : null}
+          {project.appStoreUrl ? (
+            <a
+              href={project.appStoreUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${project.title} on the App Store`}
+              className={actionClass}
+            >
+              App Store
               <ArrowUpRight className="size-4" aria-hidden="true" />
             </a>
           ) : null}

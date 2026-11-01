@@ -55,5 +55,3 @@ Project copy, tech lists and links live in `src/data/projects.ts`. Put screensho
 Still to fill in:
 
 - Real project screenshots, and the matching `imageAlt` text in `src/data/projects.ts`
-- A public contact email on `site.contactEmail` in `src/data/site.ts`
-- ShiftPal App Store and source code links
