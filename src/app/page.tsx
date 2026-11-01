@@ -8,6 +8,7 @@ import { SiteHeader } from "@/components/site-header";
 export default function Home(): ReactElement {
   return (
     <>
+      <div id="top" />
       <SiteHeader />
       <main id="content">
         <Hero />

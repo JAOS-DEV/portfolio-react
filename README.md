@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000/portfolio-react](http://localhost:3000/portfolio-react). The `/portfolio-react` prefix matches the GitHub Pages project path.
+Open [http://localhost:3000](http://localhost:3000). The `/portfolio-react` prefix is applied only to the production build, so local development is served from the site root.
 
 ## Build the static site
 

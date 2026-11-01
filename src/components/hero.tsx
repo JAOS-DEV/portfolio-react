@@ -34,7 +34,7 @@ export function Hero(): ReactElement {
             </span>
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-8 text-muted md:mx-0">
-            I build and ship production apps with Next.js, React and Postgres.
+            I turn ideas into live, tested apps. Paid Talent, ShiftPal and Where&apos;s My Bus? are all in real users&apos; hands.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
             <a href="#work" className={primaryLinkClass}>

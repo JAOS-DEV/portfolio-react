@@ -7,10 +7,7 @@ const navLinkClass =
 
 export function SiteHeader(): ReactElement {
   return (
-    <header
-      id="top"
-      className="sticky top-0 z-20 border-b border-line bg-background/85 backdrop-blur-md pt-[env(safe-area-inset-top)]"
-    >
+    <header className="sticky top-0 z-20 border-b border-line bg-background/85 backdrop-blur-md pt-[env(safe-area-inset-top)]">
       <div className="h-1 bg-gradient-to-r from-violet-deep via-violet-bright to-violet-hero" aria-hidden="true" />
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-2 sm:px-6">
         <a href="#top" className={`${navLinkClass} px-1 font-semibold tracking-tight`}>
