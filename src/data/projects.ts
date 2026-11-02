@@ -6,7 +6,6 @@ export interface Project {
   /** Describes public/projects/<slug>.webp. Update this when the real screenshot replaces the placeholder. */
   imageAlt: string;
   liveUrl?: string;
-  codeUrl?: string;
   appStoreUrl?: string;
   inProgress?: boolean;
 }
@@ -30,7 +29,6 @@ export const projects: readonly Project[] = [
     ],
     imageAlt: "Placeholder graphic for the Paid Talent screenshot",
     liveUrl: "https://paid-talent.vercel.app",
-    codeUrl: "https://github.com/JAOS-DEV/paid-talent",
   },
   {
     slug: "wheres-my-bus",
@@ -40,7 +38,6 @@ export const projects: readonly Project[] = [
     tech: ["Next.js", "React Query", "Leaflet", "PWA"],
     imageAlt: "Placeholder graphic for the Where's My Bus screenshot",
     liveUrl: "https://tfl-tracker-wine.vercel.app",
-    codeUrl: "https://github.com/JAOS-DEV/tfl-tracker",
   },
   {
     slug: "giggauge",
@@ -50,7 +47,6 @@ export const projects: readonly Project[] = [
     tech: ["React", "Vite", "Tailwind", "Recharts", "Zod", "Vitest", "PWA"],
     imageAlt: "Placeholder graphic for the GigGauge screenshot",
     liveUrl: "https://giggauge.vercel.app",
-    codeUrl: "https://github.com/JAOS-DEV/GigGauge",
   },
   {
     slug: "shiftpal",
@@ -61,7 +57,6 @@ export const projects: readonly Project[] = [
     imageAlt: "Placeholder graphic for the ShiftPal screenshot",
     liveUrl: "https://shiftpal.app",
     appStoreUrl: "https://apps.apple.com/gb/app/shiftpal-shift-tracker/id6757287002",
-    codeUrl: "https://github.com/JAOS-DEV/shiftpal-app",
   },
   {
     slug: "venuboard",
@@ -70,7 +65,6 @@ export const projects: readonly Project[] = [
       "A white-label website and management platform for venues, with multi-tenant subdomains.",
     tech: ["Next.js", "Supabase"],
     imageAlt: "Placeholder graphic for the VenuBoard screenshot",
-    codeUrl: "https://github.com/JAOS-DEV/VenuBoard",
     inProgress: true,
   },
 ];

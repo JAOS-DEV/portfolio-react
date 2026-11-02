@@ -12,6 +12,8 @@ const actionClass =
   "inline-flex min-h-11 w-full items-center justify-center gap-1.5 rounded-full bg-gradient-to-b from-violet-bright to-violet-deep px-4 text-sm font-semibold text-white hover:from-violet-deep hover:to-violet-bright sm:w-auto";
 
 export function ProjectCard({ project }: ProjectCardProps): ReactElement {
+  const hasActions = Boolean(project.liveUrl || project.appStoreUrl);
+
   return (
     <article className="flex h-full w-full flex-col overflow-hidden rounded-2xl border border-line bg-card shadow-[0_0_5px_1px_rgba(0,0,0,0.18)]">
       <div className="relative aspect-video bg-violet-deep">
@@ -41,44 +43,34 @@ export function ProjectCard({ project }: ProjectCardProps): ReactElement {
             </li>
           ))}
         </ul>
-        <div className="mt-auto flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
-          {project.liveUrl ? (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${project.title} live site`}
-              className={actionClass}
-            >
-              Live
-              <ArrowUpRight className="size-4" aria-hidden="true" />
-            </a>
-          ) : null}
-          {project.appStoreUrl ? (
-            <a
-              href={project.appStoreUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${project.title} on the App Store`}
-              className={actionClass}
-            >
-              App Store
-              <ArrowUpRight className="size-4" aria-hidden="true" />
-            </a>
-          ) : null}
-          {project.codeUrl ? (
-            <a
-              href={project.codeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`${project.title} source code`}
-              className={actionClass}
-            >
-              Code
-              <ArrowUpRight className="size-4" aria-hidden="true" />
-            </a>
-          ) : null}
-        </div>
+        {hasActions ? (
+          <div className="mt-auto flex flex-col gap-3 pt-2 sm:flex-row sm:flex-wrap">
+            {project.liveUrl ? (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${project.title} live site`}
+                className={actionClass}
+              >
+                Live
+                <ArrowUpRight className="size-4" aria-hidden="true" />
+              </a>
+            ) : null}
+            {project.appStoreUrl ? (
+              <a
+                href={project.appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${project.title} on the App Store`}
+                className={actionClass}
+              >
+                App Store
+                <ArrowUpRight className="size-4" aria-hidden="true" />
+              </a>
+            ) : null}
+          </div>
+        ) : null}
       </div>
     </article>
   );
